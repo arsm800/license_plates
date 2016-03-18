@@ -3,7 +3,7 @@ class CreateLocations < ActiveRecord::Migration
     create_table :locations do |t|
       t.string :country
       t.string :territory
-      t.string :type
+      t.string :version
     end
   end
 end
