@@ -1,1 +1,12 @@
 <h1>Locations!</h1>
+
+<table>
+  <% @locations.each do |location| %>
+    <tr>
+      <td> <%= location.country %> </td>
+      <td> <%= location.territory %> </td>
+      <td> <%= location.territory_type %> </td>
+    </tr>
+  <% end %>
+
+</table>
