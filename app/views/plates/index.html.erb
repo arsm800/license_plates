@@ -1,10 +1,14 @@
 <h1>Plates!<h1>
 
+<div> <%= link_to "Add", new_plate_path %> </div>
+
 <table>
   <% @plates.each do |plate| %>
     <tr>
+      <td> <%= link_to "Update", edit_plate_path(plate) %> </td> 
       <td> <%= plate.number %> </td>
       <td> <%= plate.year %> </td>
+
     </tr>
   <% end %>
 

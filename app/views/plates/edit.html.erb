@@ -1,1 +1,23 @@
-<h1> 
+<h1> Edit Plate </h1>
+
+<%= form_for @plate do |f| %>
+  <%= f.label :number %>
+  <%= f.text_field :number %>
+
+  <%= f.label :year %>
+  <%= f.number_field :year %>
+
+  <%= f.label :style %>
+  <%= f.text_field :style %>
+
+  <%= f.label :source %>
+  <%= f.text_field :source %>
+
+  <%= f.label :date_acquired %>
+  <%= f.text_field :date_acquired %>
+
+  <%= f.submit "Edit" %>
+
+<% end %>
+
+<%= link_to "Delete", @plate, method: :delete, class: "delete" %>
