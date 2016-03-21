@@ -1,1 +1,11 @@
 <h1>Plates!<h1>
+
+<table>
+  <% @plates.each do |plate| %>
+    <tr>
+      <td> <%= plate.number %> </td>
+      <td> <%= plate.year %> </td>
+    </tr>
+  <% end %>
+
+</table>

@@ -9,9 +9,10 @@
 <body>
   <header>License Plates!</header>
 
-<div>Locations</div>    <!-- These need to be links -->
-  <div>Plates</div>
-  <div>Add</div>
+  <!-- These need to be links -->
+  <div> <%= link_to "Locations", locations_path %> </div>
+  <div> <%= link_to "Plates", plates_path %> </div>
+  <div> <%= link_to "Add", new_plate_path %> </div>
   <div>Update</div>
   <div>Delete</div>
 
