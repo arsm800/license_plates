@@ -5,10 +5,12 @@
 <table>
   <% @plates.each do |plate| %>
     <tr>
-      <td> <%= link_to "Update", edit_plate_path(plate) %> </td> 
+      <td> <%= link_to "Update", edit_plate_path(plate) %> </td>
       <td> <%= plate.number %> </td>
       <td> <%= plate.year %> </td>
-
+      <td> <%= plate.style %> </td>
+      <td> <%= plate.source %> </td>
+      <td> <%= plate.date_acquired %> </td>
     </tr>
   <% end %>
 
