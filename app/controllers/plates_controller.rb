@@ -1,7 +1,8 @@
 class PlatesController < ApplicationController
 
   def index
-    @plates = Plate.all
+    @location = Location.find(params[:location_id])
+    @plates = @location.plates
   end
 
   def show
@@ -9,16 +10,25 @@ class PlatesController < ApplicationController
   end
 
   def new
-    @plate = Plate.new
+    @location = Location.find(params[:location_id])
+    @plate = @location.plates.new
   end
 
   def create
-    @plate = Plate.create(plate_params)
-    redirect_to plates_path(@plate)
+    # @plate = Plate.new(plate_params)
+    # @location = Location.find(params[:location_id])
+    # @plate.location_id = @location.id
+    # @plate.save
+
+    @location = Location.find(params[:location_id])
+    @plate = @location.plates.create!(plate_params)
+
+    redirect_to location_plates_path(@location)
   end
 
   def edit
     @plate = Plate.find(params[:id])
+    @location = Location.find(params[:location_id])
   end
 
   def update
@@ -31,6 +41,10 @@ class PlatesController < ApplicationController
     @plate = Plate.find(params[:id])
     @plate.destroy
     redirect_to plates_path(@plate)
+  end
+
+  def list
+    @plates = Plate.all
   end
 
   private

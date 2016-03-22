@@ -1,5 +1,7 @@
-<h1> Number: <%= @locations.country %> </h1>
+<h1> Number: <%= @location.country %> </h1>
 
-<h1> Year: <%= @locations.territory %> </h1>
+<h1> Year: <%= @location.territory %> </h1>
 
-<h1> Territory Type: <%= @locations.territory_type %> </h1>
+<h1> Territory Type: <%= @location.territory_type %> </h1>
+
+<div> <%= link_to "Plates", location_plates_path(@location) %> </div>

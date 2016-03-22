@@ -1,4 +1,4 @@
-<h1>Locations!</h1>
+<h1>Locations</h1>
 
 <div> <%= link_to "Add Location", new_location_path %> </div>
 
@@ -8,6 +8,7 @@
       <td> <%= location.country %> </td>
       <td> <%= location.territory %> </td>
       <td> <%= location.territory_type %> </td>
+      <td> <%= link_to "Plates", location_plates_path(location) %> </td>
     </tr>
   <% end %>
 

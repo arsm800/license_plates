@@ -1,6 +1,6 @@
-<h1> Edit Plate </h1>
+<h1> Update Plate </h1>
 
-<%= form_for @plate do |f| %>
+<%= form_for [@location, @plate] do |f| %>
   <%= f.label :number %>
   <%= f.text_field :number %>
 
@@ -20,4 +20,4 @@
 
 <% end %>
 
-<%= link_to "Delete", @plate, method: :delete, class: "delete" %>
+<%= link_to "Delete", [@location, @plate], method: :delete, class: "delete" %>

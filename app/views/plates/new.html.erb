@@ -1,6 +1,6 @@
 <h1>New License Plate</h1>
 
-<%= form_for @plate do |f| %>
+<%= form_for [@location, @plate] do |f| %>
   <%= f.label :number %>
   <%= f.text_field :number %>
 
