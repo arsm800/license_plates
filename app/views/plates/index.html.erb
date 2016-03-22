@@ -2,7 +2,7 @@
 
 <div> <%= link_to "Add", new_plate_path %> </div>
 
-<table>
+<table class="table table-hover">
   <% @plates.each do |plate| %>
     <tr>
       <td> <%= link_to "Update", edit_plate_path(plate) %> </td>

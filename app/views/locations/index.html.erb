@@ -2,7 +2,7 @@
 
 <div> <%= link_to "Add Location", new_location_path %> </div>
 
-<table>
+<table class="table table-hover">
   <% @locations.each do |location| %>
     <tr>
       <td> <%= location.country %> </td>
