@@ -14,9 +14,30 @@
  *= require_self
  */
 div {
-  color: blue
+  color: blue;
 }
 
 .table-hover {
-  color: green
+  color: green;
+}
+
+.table {
+  font: helvetica;
+}
+
+.main {
+  font: helvetica;
+  font-size: 300%;
+  text-align: center;
+  padding-top: 50px;
+}
+
+input[type="text"] {
+  width: 100px;
+  font: helvetica;
+}
+
+h1 {
+  font-size: 50px;
+  font: helvetica;
 }
