@@ -4,6 +4,12 @@
 
 
 <table class="table table-hover">
+  <th>Update Plate</th>
+  <th>Number</th>
+  <th>Year</th>
+  <th>Description</th>
+  <th>Source</th>
+  <th>Date Acquired</th>
   <% @plates.each do |plate| %>
     <tr>
       <td> <%= link_to "Update", edit_location_plate_path(@location, plate) %> </td>

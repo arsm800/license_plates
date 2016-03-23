@@ -3,6 +3,11 @@
 <div> <%= link_to "Add Location", new_location_path %> </div>
 
 <table class="table table-hover">
+  <th>Plates</th>
+  <th>Country</th>
+  <th>Territory</th>
+  <th>Territory Type</th>
+  <th>Edit Location</th>
   <% @locations.each do |location| %>
     <tr>
       <td> <%= link_to "Plates", location_plates_path(location) %> </td>
