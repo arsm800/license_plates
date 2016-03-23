@@ -63,4 +63,4 @@ state_Wisconsin = Location.create(country: "USA", territory: "Wisconsin", territ
 state_Wyoming = Location.create(country: "USA", territory: "Wyoming", territory_type: "State")
 
 plate_georgia_1 = Plate.create(number: "89 66F", year: 1941, style: "PEACH STATE", source: "Art Smith - grandfather", date_acquired: "Christmas 1993", location_id: state_georgia.id)
-plate_maryland_1 = Plate.create(number: "PGY 105", year: 1995, style: "State flag & shield", source: "Rob Swendiman - elementary school classmate", date_acquired: "Fall 1997")
+plate_maryland_1 = Plate.create(number: "PGY 105", year: 1995, style: "State flag & shield", source: "Rob Swendiman - elementary school classmate", date_acquired: "Fall 1997", location_id: state_maryland.id)
