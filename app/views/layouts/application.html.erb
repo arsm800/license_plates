@@ -12,6 +12,9 @@
 <body>
   <header class="main">License Plate Collection</header>
 
+  <h1 class="header">License Plates (<%= Plate.count %>) </h1>
+  <h1 class="header">Locations (<%= Location.count %>) </h1>
+
   <!-- These need to be links -->
   <div> <%= link_to "Locations", locations_path %> </div>
   <div> <%= link_to "Plates", plates_path %> </div>
