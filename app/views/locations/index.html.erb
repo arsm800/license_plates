@@ -1,4 +1,5 @@
-<h1 class="header">Locations</h1>
+<h1 class="header">License Plates (<%= Plate.count %>) </h1>
+<h1 class="header">Locations (<%= Location.count %>) </h1>
 
 <div> <%= link_to "Add Location", new_location_path %> </div>
 
@@ -7,6 +8,7 @@
   <th>Country</th>
   <th>Territory</th>
   <th>Territory Type</th>
+  <th>Total</th>
   <th>Edit Location</th>
   <% @locations.each do |location| %>
     <tr>
@@ -14,6 +16,7 @@
       <td> <%= location.country %> </td>
       <td> <%= location.territory %> </td>
       <td> <%= location.territory_type %> </td>
+      <td> <%= location.plates.count %> </td>
       <td> <%= link_to "Edit", edit_location_path(location) %> </td>
     </tr>
   <% end %>

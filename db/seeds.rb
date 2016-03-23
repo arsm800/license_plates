@@ -13,7 +13,7 @@ Plate.destroy_all
 
 state_alabama = Location.create(country: "USA", territory: "Alabama", territory_type: "State")
 state_Alaska = Location.create(country: "USA", territory: "Alaska", territory_type: "State")
-state_Arizana = Location.create(country: "USA", territory: "Arizana", territory_type: "State")
+state_Arizona = Location.create(country: "USA", territory: "Arizana", territory_type: "State")
 state_Arkansas = Location.create(country: "USA", territory: "Arkansas", territory_type: "State")
 state_California = Location.create(country: "USA", territory: "California", territory_type: "State")
 state_Colorado = Location.create(country: "USA", territory: "Colorado", territory_type: "State")
@@ -62,5 +62,18 @@ state_West_Virginia = Location.create(country: "USA", territory: "West Virginia"
 state_Wisconsin = Location.create(country: "USA", territory: "Wisconsin", territory_type: "State")
 state_Wyoming = Location.create(country: "USA", territory: "Wyoming", territory_type: "State")
 
-plate_georgia_1 = Plate.create(number: "89 66F", year: 1941, style: "PEACH STATE", source: "Art Smith - grandfather", date_acquired: "Christmas 1993", location_id: state_georgia.id)
-plate_maryland_1 = Plate.create(number: "PGY 105", year: 1995, style: "State flag & shield", source: "Rob Swendiman - elementary school classmate", date_acquired: "Fall 1997", location_id: state_maryland.id)
+
+
+
+plate_georgia_001 = Plate.create(number: "89 66F", year: 1941, style: "PEACH STATE", source: "Art Smith", date_acquired: "Christmas 1993", location_id: state_georgia.id)
+plate_maryland_001 = Plate.create(number: "PGY 105", year: 1995, style: "State flag & shield", source: "Rob Swendiman", date_acquired: "Fall 1997", location_id: state_maryland.id)
+
+plate_alabama_001 = Plate.create(number: "34536", year: 1994, style: "National Guard", source: "Antique store - Abilene, KS", date_acquired: "Summer 2005", location_id: state_alabama.id)
+
+plate_alaska_001 = Plate.create(number: "BKT 244", year: 1983, style: "'The Last Frontier' - navy letters, gold background", source: "Art Smith - found in auto repair shop, Fairbanks, AK", date_acquired: "May 1995", location_id: state_Alaska.id)
+plate_alaska_002 = Plate.create(number: "6570 PG", year: 1992, style: "Trailer", source: "Clifford King", date_acquired: "Summer 2007", location_id: state_Alaska.id)
+plate_alaska_003 = Plate.create(number: "DPK 234", year: 0000, style: "'Centennial' gold rush images, blue/gold/white colors", source: "Fisherman's Wharf Boutique Shop, San Francisco, CA", date_acquired: "8/14/2009", location_id: state_Alaska.id)
+
+plate_arizona_001 = Plate.create(number: "312 BAK", year: 2001, style: "'Grand Canyon State' - teal sunset", source: "Gretchen and Lincoln - Fisherman's Wharf Boutique Shop, San Francisco, CA", date_acquired: "Fall 2005", location_id: state_Arizona.id)
+plate_arizona_002 = Plate.create(number: "CWC 666", year: 1988, style: "'Grand Canyon State' - maroon", source: "Antique Store, Abilene, KS", date_acquired: "Summer 2004", location_id: state_Arizona.id)
+plate_arizona_003 = Plate.create(number: "4147-NG", year: 1973, style: "'Centennial' gold rush images, blue/gold/white colors", source: "Fisherman's Wharf Boutique Shop, San Francisco, CA", date_acquired: "8/14/2009", location_id: state_Arizona.id)
