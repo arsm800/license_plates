@@ -17,9 +17,19 @@ class LocationsController < ApplicationController
     redirect_to locations_path(@location)
   end
 
+  def edit
+    @location = Location.find(params[:id]) #Why does :id work and :location_id not work?
+  end
+
   def update
     @location = Location.find(params[:id])
     @location.update(location_params)
+    redirect_to locations_path(@location)
+  end
+
+  def destroy
+    @location = Location.find(params[:id])
+    @location.destroy
     redirect_to locations_path(@location)
   end
 

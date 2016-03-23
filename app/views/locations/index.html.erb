@@ -5,10 +5,11 @@
 <table class="table table-hover">
   <% @locations.each do |location| %>
     <tr>
+      <td> <%= link_to "Plates", location_plates_path(location) %> </td>
       <td> <%= location.country %> </td>
       <td> <%= location.territory %> </td>
       <td> <%= location.territory_type %> </td>
-      <td> <%= link_to "Plates", location_plates_path(location) %> </td>
+      <td> <%= link_to "Edit Location", edit_location_path(location) %> </td>
     </tr>
   <% end %>
 
