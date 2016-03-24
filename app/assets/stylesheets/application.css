@@ -43,3 +43,23 @@ input[type="text"] {
   font: helvetica;
   text-align: center;
 }
+
+.new_plate {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.new_location {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.edit_plate {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.edit_location {
+  text-align: center;
+  margin-top: 50px;
+}

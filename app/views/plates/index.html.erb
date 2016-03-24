@@ -1,4 +1,4 @@
-<h1 class="header">Plates</h1>
+<h1 class="header"> <%= @location.territory %> (<%= @location.plates.count %>) </h1>
 
 <div> <%= link_to "Add", new_location_plate_path(@location) %> </div>
 

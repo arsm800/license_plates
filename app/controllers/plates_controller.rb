@@ -34,13 +34,13 @@ class PlatesController < ApplicationController
   def update
     @plate = Plate.find(params[:id])
     @plate.update(plate_params)
-    redirect_to plates_path(@plate)
+    redirect_to location_plates_path
   end
 
   def destroy
     @plate = Plate.find(params[:id])
     @plate.destroy
-    redirect_to plates_path(@plate)
+    redirect_to location_plates_path
   end
 
   def list
