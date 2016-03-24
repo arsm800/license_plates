@@ -1,0 +1,66 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
+div {
+  color: blue;
+}
+
+.table-hover {
+  color: green;
+}
+
+.table {
+  font: helvetica;
+
+}
+
+.main {
+  font: helvetica;
+  font-size: 300%;
+  text-align: center;
+  padding-top: 50px;
+}
+
+input[type="text"] {
+  width: 100px;
+  font: helvetica;
+}
+
+.header {
+  font-size: 25px;
+  font: helvetica;
+  text-align: center;
+}
+
+.new_plate {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.new_location {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.edit_plate {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.edit_location {
+  text-align: center;
+  margin-top: 50px;
+}
