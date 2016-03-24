@@ -91,7 +91,7 @@ plate_colorado_003 = Plate.create(number: "083 MYY", year: 2008, style: "White m
 
 plate_connecticut_001 = Plate.create(number: "628 852", year: 1969, style: "Blue background, white lettering.", source: "Antique store, Abilene, KS", date_acquired: "Summer 2004", location_id: state_Connecticut.id)
 
-plate_delaware_001 = Plate.create(number: "260436", year: 1988, style: "'The first state' - navy and gold", source: "Michael Dickhaut", date_acquired: "Summer 1994", location_id: state_Delaware.id)
+plate_delaware_001 = Plate.create(number: "260436", year: 1988, style: "'The first state' - navy and gold", source: "Michael Dickhaut", date_acquired: "Summer 1994", location_id: state_Delawarequi.id)
 
 plate_florida_001 = Plate.create(number: "XWN 91M", year: 2001, style: "Orange (fruit), Broward County", source: "Antique store, Abilene, KS", date_acquired: "Summer 2004", location_id: state_Florida.id)
 plate_florida_002 = Plate.create(number: "165 176", year: 1936, style: "Completely rusted", source: "Art Smith, Valdosta, GA", date_acquired: "Christmas 1993", location_id: state_Florida.id)
@@ -113,4 +113,4 @@ plate_georgia_010 = Plate.create(number: "SXK 700", year: 1983, style: "Lowndes 
 plate_georgia_011 = Plate.create(number: "11343", year: 1985, style: "Georgia Tech centennial", source: "Art Smith, Valdosta, GA", date_acquired: "Christmas 1993", location_id: state_georgia.id)
 plate_georgia_012 = Plate.create(number: "702 MGC", year: 2001, style: "'Georgia...on my mind' - Fulton County", source: "Art Smith, Valdosta, GA", date_acquired: "Christmas 1993", location_id: state_georgia.id)
 plate_georgia_013 = Plate.create(number: "ATQ 4963", year: 2006, style: "gray background w/ peach in middle, Henry County", source: "All-Ford Nationals auto show, Carlisle, PA", date_acquired: "6/7/2008", location_id: state_georgia.id)
-plate_georgia_014 = Plate.create(number: "2AF57", year: 1996, style: "Centennial Olympic Games, Atlanta, 1996", source: "Julianna Winters", date_acquired: "12/15/11", location_id: state_Florida.id)
+plate_georgia_014 = Plate.create(number: "2AF57", year: 1996, style: "Centennial Olympic Games, Atlanta, 1996", source: "Julianna Winters", date_acquired: "12/15/11", location_id: state_georgia.id)
