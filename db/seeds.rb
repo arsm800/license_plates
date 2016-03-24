@@ -91,7 +91,7 @@ plate_colorado_003 = Plate.create(number: "083 MYY", year: 2008, style: "White m
 
 plate_connecticut_001 = Plate.create(number: "628 852", year: 1969, style: "Blue background, white lettering.", source: "Antique store, Abilene, KS", date_acquired: "Summer 2004", location_id: state_Connecticut.id)
 
-plate_delaware_001 = Plate.create(number: "260436", year: 1988, style: "'The first state' - navy and gold", source: "Michael Dickhaut", date_acquired: "Summer 1994", location_id: state_Delawarequi.id)
+plate_delaware_001 = Plate.create(number: "260436", year: 1988, style: "'The first state' - navy and gold", source: "Michael Dickhaut", date_acquired: "Summer 1994", location_id: state_Delaware.id)
 
 plate_florida_001 = Plate.create(number: "XWN 91M", year: 2001, style: "Orange (fruit), Broward County", source: "Antique store, Abilene, KS", date_acquired: "Summer 2004", location_id: state_Florida.id)
 plate_florida_002 = Plate.create(number: "165 176", year: 1936, style: "Completely rusted", source: "Art Smith, Valdosta, GA", date_acquired: "Christmas 1993", location_id: state_Florida.id)
