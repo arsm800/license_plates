@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'rails_log_stdout'
+gem 'rails3_serve_static_assets'
 gem "rails_12factor", group: :production
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
