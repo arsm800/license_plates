@@ -10,6 +10,7 @@
   <th>Description</th>
   <th>Source</th>
   <th>Date Acquired</th>
+  <th>Image Link</th>
   <% @plates.each do |plate| %>
     <tr>
       <td> <%= link_to "Update", edit_location_plate_path(@location, plate) %> </td>
@@ -18,6 +19,7 @@
       <td> <%= plate.style %> </td>
       <td> <%= plate.source %> </td>
       <td> <%= plate.date_acquired %> </td>
+      <td><a href=" https://<%= plate.number %>.com" >Image</a> </td>
     </tr>
   <% end %>
 
