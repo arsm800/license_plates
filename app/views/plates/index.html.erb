@@ -1,6 +1,6 @@
 <h1 class="header"> <%= @location.territory %> (<%= @location.plates.count %>) </h1>
 
-<div> <%= link_to "Add", new_location_plate_path(@location) %> </div>
+<button class="btn-primary"> <%= link_to "Add Plate", new_location_plate_path(@location) %> </button>
 
 
 <table class="table table-hover">
@@ -10,7 +10,7 @@
   <th>Description</th>
   <th>Source</th>
   <th>Date Acquired</th>
-  <th>Image </th>
+  <th>Image</th>
   <% @plates.each do |plate| %>
     <tr>
       <td> <%= link_to "Update", edit_location_plate_path(@location, plate) %> </td>
@@ -19,7 +19,7 @@
       <td> <%= plate.style %> </td>
       <td> <%= plate.source %> </td>
       <td> <%= plate.date_acquired %> </td>
-      <td> <%= image_tag "http://imgur.com/P9NO8Y4.png" %> </td>
+      <td> <%= image_tag("http://imgur.com/P9NO8Y4.png", size: "100x50") %> </td>
     </tr>
   <% end %>
 
