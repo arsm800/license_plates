@@ -62,6 +62,22 @@ state_West_Virginia = Location.create(country: "USA", territory: "West Virginia"
 state_Wisconsin = Location.create(country: "USA", territory: "Wisconsin", territory_type: "State")
 state_Wyoming = Location.create(country: "USA", territory: "Wyoming", territory_type: "State")
 
+province_ontario = Location.create(country: "Canada", territory: "Ontario", territory_type: "Province")
+province_quebec = Location.create(country: "Canada", territory: "Quebec", territory_type: "Province")
+province_british_columbia = Location.create(country: "Canada", territory: "British Columbia", territory_type: "Province")
+province_alberta = Location.create(country: "Canada", territory: "Alberta", territory_type: "Province")
+province_manitoba = Location.create(country: "Canada", territory: "Manitoba", territory_type: "Province")
+province_saskatchewan = Location.create(country: "Canada", territory: "Saskatchewan", territory_type: "Province")
+province_nova_scotia = Location.create(country: "Canada", territory: "Nova Scotia", territory_type: "Province")
+province_new_brunswick = Location.create(country: "Canada", territory: "New Brunswick", territory_type: "Province")
+province_newfoundland_and_labrador = Location.create(country: "Canada", territory: "Newfoundland and Labrador", territory_type: "Province")
+province_prince_edward_island = Location.create(country: "Canada", territory: "Prince Edward Island", territory_type: "Province")
+province_northwest_territories = Location.create(country: "Canada", territory: "Northwest Territories", territory_type: "Province")
+province_yukon = Location.create(country: "Canada", territory: "Yukon", territory_type: "Province")
+province_nunavut = Location.create(country: "Canada", territory: "Nunavut", territory_type: "Province")
+
+
+
 
 
 
