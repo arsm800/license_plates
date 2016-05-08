@@ -92,7 +92,26 @@ province_herrera = Location.create(country: "Panama", territory: "Herrera", terr
 country_USA = Location.create(country: "USA", territory: "N/A", territory_type: "Country")
 
 
-# 
+require("csv")
+
+csv_text = File.read(Rails.root.join("db", "license_plates_seed_file.csv"))
+csv = CSV.parse(csv_text, :headers => true)
+csv.each do |row|
+  l = Plate.new
+  l.number = row["number"]
+  l.year = row["year"]
+  l.description = row["description"]
+  l.source = row["source"]
+  l.date_acquired = row["date_acquired"]
+  l.image_url = row["image_url"]
+  l.location_id = row["location_id"]
+  l.save
+  puts "#{l.number} and corresponding data saved."
+end
+
+puts "There are now #{Location.count} locations and  #{Plate.count} rows in the plates table."
+
+#
 # plate_maryland_001 = Plate.create(number: "PGY 105", year: 1995, style: "State flag & shield", source: "Rob Swendiman", date_acquired: "Fall 1997", location_id: state_maryland.id)
 #
 # plate_alabama_001 = Plate.create(number: "34536", year: 1994, style: "National Guard", source: "Antique store - Abilene, KS", date_acquired: "Summer 2005", location_id: state_alabama.id)
