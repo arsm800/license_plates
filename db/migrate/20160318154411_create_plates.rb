@@ -3,9 +3,10 @@ class CreatePlates < ActiveRecord::Migration
     create_table :plates do |t|
       t.string :number
       t.integer :year
-      t.string :style
+      t.string :description
       t.string :source
       t.string :date_acquired
+      t.string :image_url
       t.references :location, index: true, foreign_key: true
     end
   end

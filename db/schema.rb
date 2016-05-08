@@ -27,9 +27,10 @@ ActiveRecord::Schema.define(version: 20160318202255) do
   create_table "plates", force: :cascade do |t|
     t.string   "number"
     t.integer  "year"
-    t.string   "style"
+    t.string   "description"
     t.string   "source"
     t.string   "date_acquired"
+    t.string   "image_url"
     t.integer  "location_id"
     t.datetime "created_at"
     t.datetime "updated_at"

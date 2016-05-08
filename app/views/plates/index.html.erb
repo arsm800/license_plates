@@ -19,7 +19,7 @@
       <td> <%= plate.style %> </td>
       <td> <%= plate.source %> </td>
       <td> <%= plate.date_acquired %> </td>
-      <td> <%= image_tag("http://imgur.com/P9NO8Y4.png", size: "100x50") %> </td>
+      <td> <%= image_tag(plate.image_url, size: "100x50") %> </td>
     </tr>
   <% end %>
 

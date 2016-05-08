@@ -7,9 +7,9 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-
 Plate.destroy_all
 Location.destroy_all
+
 
 state_Alabama = Location.create(country: "USA", territory: "Alabama", territory_type: "State")
 state_Alaska = Location.create(country: "USA", territory: "Alaska", territory_type: "State")
