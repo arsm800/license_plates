@@ -104,7 +104,10 @@ csv.each do |row|
   l.source = row["source"]
   l.date_acquired = row["date_acquired"]
   l.image_url = row["image_url"]
-  l.location_id = Location.find_by(territory: row["territory"])
+  l.territory = row["territory"]
+  location = Location.find_by(territory: row["territory"])
+  l.location = location
+  # This has to be "location", not "location_id"  Why?
   puts "Test"
   l.save
   puts "#{l.number} and corresponding data saved."

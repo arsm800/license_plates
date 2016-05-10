@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20160318202255) do
     t.string   "source"
     t.string   "date_acquired"
     t.string   "image_url"
+    t.string   "territory"
     t.integer  "location_id"
     t.datetime "created_at"
     t.datetime "updated_at"

@@ -7,6 +7,7 @@ class CreatePlates < ActiveRecord::Migration
       t.string :source
       t.string :date_acquired
       t.string :image_url
+      t.string :territory
       t.references :location, index: true, foreign_key: true
     end
   end
