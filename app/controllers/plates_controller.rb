@@ -49,6 +49,6 @@ class PlatesController < ApplicationController
 
   private
   def plate_params
-    params.require(:plate).permit(:number, :year, :style, :source, :date_acquired)
+    params.require(:plate).permit(:number, :year, :description, :source, :date_acquired)
   end
 end
