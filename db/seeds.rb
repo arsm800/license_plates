@@ -104,7 +104,8 @@ csv.each do |row|
   l.source = row["source"]
   l.date_acquired = row["date_acquired"]
   l.image_url = row["image_url"]
-  l.location_id = row["location_id"]
+  l.location_id = Location.find_by(territory: row["territory"])
+  puts "Test"
   l.save
   puts "#{l.number} and corresponding data saved."
 end
