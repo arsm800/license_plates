@@ -16,7 +16,7 @@
       <td> <%= link_to "Update", edit_location_plate_path(@location, plate) %> </td>
       <td> <%= plate.number %> </td>
       <td> <%= plate.year %> </td>
-      <td> <%= plate.style %> </td>
+      <td> <%= plate.description %> </td>
       <td> <%= plate.source %> </td>
       <td> <%= plate.date_acquired %> </td>
       <td> <%= image_tag(plate.image_url, size: "100x50") %> </td>

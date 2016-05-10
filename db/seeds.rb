@@ -13,7 +13,7 @@ Location.destroy_all
 
 state_Alabama = Location.create(country: "USA", territory: "Alabama", territory_type: "State")
 state_Alaska = Location.create(country: "USA", territory: "Alaska", territory_type: "State")
-state_Arizona = Location.create(country: "USA", territory: "Arizana", territory_type: "State")
+state_Arizona = Location.create(country: "USA", territory: "Arizona", territory_type: "State")
 state_Arkansas = Location.create(country: "USA", territory: "Arkansas", territory_type: "State")
 state_California = Location.create(country: "USA", territory: "California", territory_type: "State")
 state_Colorado = Location.create(country: "USA", territory: "Colorado", territory_type: "State")
