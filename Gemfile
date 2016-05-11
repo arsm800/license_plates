@@ -2,8 +2,6 @@ source 'https://rubygems.org'
 
 gem "paperclip", "~> 5.0.0.beta1"
 # Paperclip allows you to upload photos
-gem "rails_12factor", group: :production
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.15'
@@ -36,6 +34,13 @@ gem "pry"
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+gem "rails_12factor", group: :production
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+
+gem 'rack-utf8_sanitizer'
+gem "handle_invalid_percent_encoding_requests"
+gem 'utf8-cleaner'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -47,4 +52,5 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
 end

@@ -94,7 +94,7 @@ country_USA = Location.create(country: "USA", territory: "N/A", territory_type: 
 
 require("csv")
 
-csv_text = File.read(Rails.root.join("db", "license_plates_seed_file.csv"))
+csv_text = File.read(Rails.root.join("db", "license_plates_seed_file.csv")).encode!("UTF-8", "binary", invalid: :replace, undef: :replace, replace: "?")
 csv = CSV.parse(csv_text, :headers => true)
 csv.each do |row|
   l = Plate.new
