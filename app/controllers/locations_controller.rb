@@ -33,6 +33,11 @@ class LocationsController < ApplicationController
     redirect_to locations_path(@location)
   end
 
+  def locations_json
+    @location = Location.all
+    render status: 200, json: @location.to_json
+  end
+
   private
   def location_params
     params.require(:location).permit(:country, :territory, :territory_type)

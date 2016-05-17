@@ -24,7 +24,10 @@ Rails.application.routes.draw do
   # resources :plates, only: :index
 
   get '/plates', to: "plates#list"
-  
+
+  get "/plates_json", to: "plates#plates_json"
+  get "/locations_json", to: "locations#locations_json"
+
 #   Prefix Verb   URI Pattern                                       Controller#Action
 #     root GET    /                                                 locations#index
 # location_plates GET    /locations/:location_id/plates(.:format)          plates#index

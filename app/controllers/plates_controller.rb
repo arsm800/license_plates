@@ -47,6 +47,11 @@ class PlatesController < ApplicationController
     @plates = Plate.all
   end
 
+  def plates_json
+    @plate = Plate.all
+    render status: 200, json: @plate.to_json
+  end
+
   private
   def plate_params
     params.require(:plate).permit(:number, :year, :description, :source, :date_acquired)
