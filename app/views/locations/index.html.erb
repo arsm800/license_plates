@@ -1,4 +1,4 @@
-
+<div id="bars"></div>
 
 <div> <%= link_to "Add Location", new_location_path %> </div>
 
@@ -21,3 +21,19 @@
   <% end %>
 
 </table>
+
+<script>
+
+  var h = 500;
+  var w = 1500;
+
+  $.getJSON("/plates_json", function(response) {
+    console.log(response);
+  })
+
+  d3.select("#bars")
+    .append("svg")
+    .attr("height", h)
+    .attr("width", w);
+
+</script>
