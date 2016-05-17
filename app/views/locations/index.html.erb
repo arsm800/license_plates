@@ -24,16 +24,47 @@
 
 <script>
 
-  var h = 500;
+  var barHeight = 500;
   var w = 1500;
 
-  $.getJSON("/plates_json", function(response) {
-    console.log(response);
-  })
+  var dataset = [];
 
-  d3.select("#bars")
-    .append("svg")
-    .attr("height", h)
-    .attr("width", w);
+  $.getJSON("/plates_json", function(response) {
+    dataset = response;
+    console.log(dataset);
+  });
+  //Because the AJAX requests are asynchronous, you must include a callback function and set the response to the variable you hav already defined as an empty array.//
+
+  var test = dataset.responseJSON;
+
+  var xScale = d3.scale.linear()
+            .domain([0, d3.max(dataset)])
+            .range([0, w])
+
+  var chart = d3.select("#bars")
+               .attr("height", barHeight * dataset.length)
+               .attr("width", w);
+
+  var bar = chart.selectAll("g")
+                 .data(dataset)
+                 .enter()
+                 .append("g")
+                 .attr("transform", function(d, i) {
+                   return "translate(0," + i * barHeight + ")";
+                 });
+
+  bar.append("rect")
+     .attr("width", xScale)
+     .attr("height", barHeight - 1);
+
+  bar.append("text")
+     .attr("x", function(d) {
+       return x(d) - 3;
+     })
+     .attr("y", barHeight / 2)
+     .attr("dy", ".35em")
+     .text(function(d) {
+       return d;
+     })
 
 </script>
