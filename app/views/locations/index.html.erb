@@ -35,8 +35,6 @@
   });
   //Because the AJAX requests are asynchronous, you must include a callback function and set the response to the variable you hav already defined as an empty array.//
 
-  var test = dataset.responseJSON;
-
   var xScale = d3.scale.linear()
             .domain([0, d3.max(dataset)])
             .range([0, w])
