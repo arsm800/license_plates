@@ -1,12 +1,12 @@
-
-<table class="table table-hover">
-  <th>Number</th>
-  <th>Year</th>
-  <th>Description</th>
-  <th>Source</th>
-  <th>Date Acquired</th>
-  <th>Image</th>
-  <% @plates.each do |plate| %>
+<div class="container">
+  <table class="table table-hover">
+    <th>Number</th>
+    <th>Year</th>
+    <th>Description</th>
+    <th>Source</th>
+    <th>Date Acquired</th>
+    <th>Image</th>
+    <% @plates.each do |plate| %>
     <tr>
       <td> <%= plate.number %> </td>
       <td> <%= plate.year %> </td>
@@ -15,6 +15,6 @@
       <td> <%= plate.date_acquired %> </td>
       <td> <%= image_tag(plate.image_url, size: "100x60") %> </td>
     </tr>
-  <% end %>
-
-</table>
+    <% end %>
+  </table>
+</div>

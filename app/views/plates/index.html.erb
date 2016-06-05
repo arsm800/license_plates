@@ -2,16 +2,16 @@
 
 <button class="btn-primary"> <%= link_to "Add Plate", new_location_plate_path(@location) %> </button>
 
-
-<table class="table table-hover">
-  <th>Update Plate</th>
-  <th>Number</th>
-  <th>Year</th>
-  <th>Description</th>
-  <th>Source</th>
-  <th>Date Acquired</th>
-  <th>Image</th>
-  <% @plates.each do |plate| %>
+<div class="container">
+  <table class="table table-hover">
+    <th>Update Plate</th>
+    <th>Number</th>
+    <th>Year</th>
+    <th>Description</th>
+    <th>Source</th>
+    <th>Date Acquired</th>
+    <th>Image</th>
+    <% @plates.each do |plate| %>
     <tr>
       <td> <%= link_to "Update", edit_location_plate_path(@location, plate) %> </td>
       <td> <%= plate.number %> </td>
@@ -21,6 +21,6 @@
       <td> <%= plate.date_acquired %> </td>
       <td> <%= image_tag(plate.image_url, size: "300x180") %> </td>
     </tr>
-  <% end %>
-
-</table>
+    <% end %>
+  </table>
+</div>
