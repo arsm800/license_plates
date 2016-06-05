@@ -17,12 +17,12 @@
   <h1 class="header">License Plates (<%= Plate.count %>) </h1>
   <h1 class="header">Locations (<%= Location.count %>) </h1>
 
-  <!-- These need to be links -->
-  <div><a href="https://github.com/arsm800/license_plates">See the Code</a></div>
-  <div> <%= link_to "Locations", locations_path %> </div>
-  <div> <%= link_to "Plates", plates_path %> </div>
-
-
+  <div class="group">
+    <!-- These need to be links -->
+    <div class="col-md-1 text-center"><a href="https://github.com/arsm800/license_plates">See the Code</a></div>
+    <div class="col-md-1 text-center"> <%= link_to "Locations", locations_path %> </div>
+    <div class="col-md-1 text-center"> <%= link_to "Plates", plates_path %> </div>
+  </div>
 
   <%= yield %>
 
