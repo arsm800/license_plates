@@ -13,6 +13,19 @@
  *= require_tree .
  *= require_self
  */
+.banner {
+  padding-top: 30px;
+}
+
+.stats {
+  margin-top: 10px;
+}
+
+.title {
+  color: black;
+  text-align: center;
+}
+
 div {
   color: blue;
 }
@@ -38,10 +51,11 @@ input[type="text"] {
   font: helvetica;
 }
 
-.header {
+.stats {
   font-size: 25px;
   font: helvetica;
   text-align: center;
+  padding-top: 0px;
 }
 
 .new_plate {

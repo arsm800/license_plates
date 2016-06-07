@@ -11,11 +11,16 @@
   <meta charset="utf-8">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16/d3.js"></script>
 </head>
-<body>
-  <header class="main">License Plate Collection</header>
 
-  <h1 class="header">License Plates (<%= Plate.count %>) </h1>
-  <h1 class="header">Locations (<%= Location.count %>) </h1>
+<body>
+
+  <div class="container">
+    <div class="banner jumbotron">
+      <h2 class="title">License Plate Collection</h2>
+      <h3 class="stats col-md-6">Locations (<%= Location.count %>) </h3>
+      <h3 class="stats col-md-6">License Plates (<%= Plate.count %>) </h3>
+    </div>
+  </div>
 
   <div class="group">
     <!-- These need to be links -->
