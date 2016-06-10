@@ -1,6 +1,6 @@
-<h1 class="header"> <%= @location.territory %> (<%= @location.plates.count %>) </h1>
+<h1 class="header location"> <%= @location.territory %> (<%= @location.plates.count %>) </h1>
 
-<button class="btn-primary"> <%= link_to "Add Plate", new_location_plate_path(@location) %> </button>
+<div class="container"> <%= link_to "Add Plate", new_location_plate_path(@location), class: "btn btn-primary" %> </div>
 
 <div class="container">
   <table class="table table-hover">

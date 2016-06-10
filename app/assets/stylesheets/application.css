@@ -19,6 +19,10 @@
   opacity: 0.75;
 }
 
+/*.fixed {
+  position: static;
+}*/
+
 .stats {
   margin-top: 10px;
   color: white;
@@ -31,6 +35,18 @@
 
 div {
   color: blue;
+}
+
+.location {
+  text-align: center;
+}
+
+.group {
+  padding-bottom: 10px;
+}
+
+.add {
+  padding-bottom: 10px;
 }
 
 .table-hover {

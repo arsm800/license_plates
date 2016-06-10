@@ -14,7 +14,7 @@
 
 <body>
 
-  <div class="container">
+  <div class="container fixed">
     <div class="jumbotron" id="banner">
       <h3 class="stats col-md-4">Locations (<%= Location.count %>) </h3>
       <h3 class="title col-md-4">License Plate Collection</h2>
@@ -22,9 +22,9 @@
     </div>
   </div>
 
-  <div class="group">
+  <div class="group container fixed">
     <!-- These need to be links -->
-    <div class="col-md-1 text-center"><a href="https://github.com/arsm800/license_plates" class="btn btn-primary">See the Code</a></div>
+    <div class="col-md-2 text-center"><a href="https://github.com/arsm800/license_plates" class="btn btn-primary">See the Code</a></div>
     <div class="col-md-1 text-center"> <%= link_to "Locations", locations_path, class: "btn btn-primary" %> </div>
     <div class="col-md-1 text-center"> <%= link_to "Plates", plates_path, class: "btn btn-primary" %> </div>
   </div>
