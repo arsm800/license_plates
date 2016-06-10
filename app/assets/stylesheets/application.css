@@ -13,16 +13,19 @@
  *= require_tree .
  *= require_self
  */
-.banner {
-  padding-top: 30px;
+#banner {
+  padding-bottom: 60px;
+  background-color: navy;
+  opacity: 0.75;
 }
 
 .stats {
   margin-top: 10px;
+  color: white;
 }
 
 .title {
-  color: black;
+  color: white;
   text-align: center;
 }
 
@@ -31,7 +34,7 @@ div {
 }
 
 .table-hover {
-  color: green;
+  color: black;
 }
 
 .table {
