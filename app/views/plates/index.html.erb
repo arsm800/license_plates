@@ -13,7 +13,7 @@
     <th>Image</th>
     <% @plates.each do |plate| %>
     <tr>
-      <td> <%= link_to "Update", edit_location_plate_path(@location, plate) %> </td>
+      <td> <%= link_to "Update", edit_location_plate_path(@location, plate), class: "btn btn-primary" %> </td>
       <td> <%= plate.number %> </td>
       <td> <%= plate.year %> </td>
       <td> <%= plate.description %> </td>
