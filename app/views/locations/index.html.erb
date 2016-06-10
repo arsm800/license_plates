@@ -1,6 +1,6 @@
 <div id="bars"></div>
 
-<div> <%= link_to "Add Location", new_location_path %> </div>
+<div> <%= link_to "Add Location", new_location_path, class: "btn btn-primary" %> </div>
 
 <div class="container">
   <table class="table table-hover">
@@ -12,12 +12,12 @@
     <th>Edit Location</th>
     <% @locations.each do |location| %>
     <tr>
-      <td> <%= link_to "Plates", location_plates_path(location) %> </td>
+      <td> <%= link_to "Plates", location_plates_path(location), class: "btn btn-primary" %> </td>
       <td> <%= location.country %> </td>
       <td> <%= location.territory %> </td>
       <td> <%= location.territory_type %> </td>
       <td> <%= location.plates.count %> </td>
-      <td> <%= link_to "Edit", edit_location_path(location) %> </td>
+      <td> <%= link_to "Edit", edit_location_path(location), class: "btn btn-primary" %> </td>
     </tr>
     <% end %>
   </table>

@@ -24,9 +24,9 @@
 
   <div class="group">
     <!-- These need to be links -->
-    <div class="col-md-1 text-center"><a href="https://github.com/arsm800/license_plates">See the Code</a></div>
-    <div class="col-md-1 text-center"> <%= link_to "Locations", locations_path %> </div>
-    <div class="col-md-1 text-center"> <%= link_to "Plates", plates_path %> </div>
+    <div class="col-md-1 text-center"><a href="https://github.com/arsm800/license_plates" class="btn btn-primary">See the Code</a></div>
+    <div class="col-md-1 text-center"> <%= link_to "Locations", locations_path, class: "btn btn-primary" %> </div>
+    <div class="col-md-1 text-center"> <%= link_to "Plates", plates_path, class: "btn btn-primary" %> </div>
   </div>
 
   <%= yield %>
