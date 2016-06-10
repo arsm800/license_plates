@@ -4,17 +4,15 @@
 
 <div class="container">
   <table class="table table-hover">
-    <th>Plates</th>
-    <th>Country</th>
     <th>Territory</th>
+    <th>Country</th>
     <th>Territory Type</th>
     <th>Total</th>
     <th>Edit Location</th>
     <% @locations.each do |location| %>
     <tr>
-      <td> <%= link_to "Plates", location_plates_path(location), class: "btn btn-primary" %> </td>
+      <td> <%= link_to location.territory, location_plates_path(location), class: "btn btn-primary"%> </td>
       <td> <%= location.country %> </td>
-      <td> <%= location.territory %> </td>
       <td> <%= location.territory_type %> </td>
       <td> <%= location.plates.count %> </td>
       <td> <%= link_to "Edit", edit_location_path(location), class: "btn btn-primary" %> </td>
