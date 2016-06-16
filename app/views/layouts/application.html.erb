@@ -14,19 +14,21 @@
 
 <body>
 
-  <div class="container fixed">
-    <div class="jumbotron" id="banner">
-      <h3 class="stats col-md-4">Locations (<%= Location.count %>) </h3>
-      <h3 class="title col-md-4">License Plate Collection</h2>
-      <h3 class="stats col-md-4">License Plates (<%= Plate.count %>) </h3>
+  <div class="jumbotron navbar-fixed-top">
+    <div class="container" id="banner">
+      <div class="row">
+        <div class="col-sm-4"><h3 class="stats">Locations (<%= Location.count %>) </h3></div>
+        <div class="col-sm-4"><h2 class="title">License Plate Collection</h2></div>
+        <div class="col-sm-4"><h3 class="stats">License Plates (<%= Plate.count %>) </h3></div>
+      </div>
     </div>
   </div>
 
-  <div class="container">
+  <div class="container links">
     <!-- These need to be links -->
-    <div class="col-md-1 text-center route-index-1"><a href="https://github.com/arsm800/license_plates" class="btn btn-primary">See the Code</a></div>
-    <div class="col-md-1 text-center route-index-2"> <%= link_to "Locations", locations_path, class: "btn btn-primary" %> </div>
-    <div class="col-md-1 text-center route-index-3"> <%= link_to "Plates", plates_path, class: "btn btn-primary" %> </div>
+    <div class="col-md-1 text-center" id="route-index-1"><a href="https://github.com/arsm800/license_plates" class="btn btn-primary">See the Code</a></div>
+    <div class="col-md-1 text-center" id="route-index-2"> <%= link_to "Locations", locations_path, class: "btn btn-primary" %> </div>
+    <div class="col-md-1 text-center" id="route-index-3"> <%= link_to "Plates", plates_path, class: "btn btn-primary" %> </div>
   </div>
 
   <%= yield %>

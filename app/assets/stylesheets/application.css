@@ -27,20 +27,27 @@
   padding-top: 10px;
 }
 
-.route-index-1 {
-  padding-left: 0;
-  padding-right: 0;
-  right: 15px;
+.jumbotron {
+  padding-bottom: 0 !important;
+  padding-top: 10px !important;
 }
 
-.route-index-2 {
+.links {
+  margin-top: 150px;
+}
+#route-index-1 {
   padding-left: 0;
   padding-right: 0;
-  left: 10px;
+}
+
+#route-index-2 {
+  padding-left: 0;
+  padding-right: 0;
+  left: 20px;
   right: 10px;
 }
 
-.route-index-3 {
+#route-index-3 {
   padding-left: 0;
   padding-right: 0;
   left: 10px;
