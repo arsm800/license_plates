@@ -15,14 +15,20 @@
  */
 #banner {
   padding-bottom: 60px;
-  background-color: navy;
-  opacity: 0.75;
+  background-color: #000066;
 }
 
 /*.fixed {
   position: static;
 }*/
 
+.header {
+  text-align: center
+}
+
+.btn-primary {
+  background-color: #22A4FE;
+}
 .index-top {
   padding-top: 10px;
 }
