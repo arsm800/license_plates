@@ -26,8 +26,8 @@
   text-align: center
 }
 
-.btn-primary {
-  background-color: #22A4FE;
+a.btn.btn-primary {
+  background: #22A4FE;
 }
 .index-top {
   padding-top: 10px;
