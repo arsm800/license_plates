@@ -26,9 +26,14 @@
   text-align: center
 }
 
-a.btn.btn-primary {
+a.btn-primary {
   background: #22A4FE;
 }
+
+a.btn-primary:hover {
+  opacity: 0.8;
+}
+
 .index-top {
   padding-top: 10px;
 }
@@ -111,7 +116,7 @@ input[type="text"] {
   font-size: 25px;
   font: helvetica;
   text-align: center;
-  padding-top: 0px;
+  padding-top: 0;
 }
 
 .new_plate {
@@ -137,3 +142,7 @@ input[type="text"] {
 .btn-primary {
   color: white;
 }
+
+/*.test {
+  background-color: #00FF99;
+}*/
