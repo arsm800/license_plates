@@ -10,9 +10,10 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
+
+
  */
+
 #banner {
   padding-bottom: 60px;
   background-color: #000066;
@@ -26,14 +27,9 @@
   text-align: center
 }
 
-a.btn-primary {
+a.btn.btn-primary {
   background: #22A4FE;
 }
-
-a.btn-primary:hover {
-  opacity: 0.8;
-}
-
 .index-top {
   padding-top: 10px;
 }
@@ -116,7 +112,7 @@ input[type="text"] {
   font-size: 25px;
   font: helvetica;
   text-align: center;
-  padding-top: 0;
+  padding-top: 0px;
 }
 
 .new_plate {
@@ -142,7 +138,3 @@ input[type="text"] {
 .btn-primary {
   color: white;
 }
-
-/*.test {
-  background-color: #00FF99;
-}*/
