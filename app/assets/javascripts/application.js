@@ -14,3 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+console.log("test");
+
+$(document).ready(function() {
+  $("#data").DataTable();
+});
