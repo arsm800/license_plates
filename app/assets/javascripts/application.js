@@ -11,12 +11,16 @@
 // about supported directives.
 //
 //= require jquery
+//= require jquery.turbolinks
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
 
-console.log("test");
+
 
 $(document).ready(function() {
-  $("#data").DataTable();
+  $("#locations").DataTable();
+  $("#plates").DataTable();
 });
+
+console.log("test");

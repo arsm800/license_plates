@@ -3,24 +3,30 @@
 <div class="container"> <%= link_to "Add Plate", new_location_plate_path(@location), class: "btn btn-primary" %> </div>
 
 <div class="container">
-  <table class="table table-hover">
-    <th>Update Plate</th>
-    <th>Number</th>
-    <th>Year</th>
-    <th>Description</th>
-    <th>Source</th>
-    <th>Date Acquired</th>
-    <th>Image</th>
-    <% @plates.each do |plate| %>
-    <tr>
-      <td> <%= link_to "Update", edit_location_plate_path(@location, plate), class: "btn btn-primary" %> </td>
-      <td> <%= plate.number %> </td>
-      <td> <%= plate.year %> </td>
-      <td> <%= plate.description %> </td>
-      <td> <%= plate.source %> </td>
-      <td> <%= plate.date_acquired %> </td>
-      <td> <%= image_tag(plate.image_url, size: "300x180") %> </td>
-    </tr>
-    <% end %>
+  <table class="table table-hover data">
+    <thead>
+      <tr>
+        <th>Update Plate</th>
+        <th>Number</th>
+        <th>Year</th>
+        <th>Description</th>
+        <th>Source</th>
+        <th>Date Acquired</th>
+        <th>Image</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @plates.each do |plate| %>
+      <tr>
+        <td> <%= link_to "Update", edit_location_plate_path(@location, plate), class: "btn btn-primary" %> </td>
+        <td> <%= plate.number %> </td>
+        <td> <%= plate.year %> </td>
+        <td> <%= plate.description %> </td>
+        <td> <%= plate.source %> </td>
+        <td> <%= plate.date_acquired %> </td>
+        <td> <%= image_tag(plate.image_url, size: "300x180") %> </td>
+      </tr>
+      <% end %>
+    </tbody>
   </table>
 </div>
