@@ -91,6 +91,10 @@ province_herrera = Location.create(country: "Panama", territory: "Herrera", terr
 
 country_USA = Location.create(country: "USA", territory: "N/A", territory_type: "Country")
 
+province_acp = Location.create(country: "Panama", territory: "Autoridad del Canal de Panama", territory_type: "Province")
+
+city_nepal = Location.create(country: "Nepal", territory: "Kathmandu", territory_type: "Municipality")
+
 
 require("csv")
 
